@@ -1,3 +1,21 @@
+#-------------------------------------------------------------------------------
+#  Copyright 2021 Martin Weber Nisslé
+#
+#  Licensed under Apache License, Version 2.0 (the "License");
+#-------------------------------------------------------------------------------
+#
+# @Description
+# Dockerfile to run MM2 server
+#
+# docker build -t mm:latest .
+# docker run -t -i --rm -p 8085:8080 --name mm mm
+# docker run -d --rm -p 8080:8080 --name mm mm
+# docker exec -t -i mm /bin/bash
+# docker logs mm
+# docker stop mm
+#-------------------------------------------------------------------------------
+
+
 FROM node:lts-slim
 
 RUN set -e; \
